@@ -11,4 +11,14 @@ public class Course {
 
     public String getId() { return id; }
     public String getName() { return name; }
+
+    // Added helper method for Task 3
+    public String getCourseInfo() {
+        return id + " - " + name;
+    }
+
+    @Override
+    public String toString() {
+        return getCourseInfo();
+    }
 }
